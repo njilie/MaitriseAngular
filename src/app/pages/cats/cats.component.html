@@ -1,0 +1,17 @@
+<h1 style="text-align: center; margin: 30px auto 20px auto;font-weight: bold;">Liste des chats</h1>
+<div id="container">
+    <div *ngFor="let cat of cats" class="card">
+        <h3 class="nom">{{ cat.nom }}</h3>
+        <div class="bloc">
+            <p class="age">Ce chat à {{ cat.age }} an(s), de race {{ cat.race }} </p>
+            <p class="vivant">Est-il vivant ? : <span *ngIf="cat.vivant == true">Oui</span>
+                <span *ngIf="cat.vivant == false">Non</span> </p>
+            <div class="blocButton">
+                <a [routerLink]="['/form/edit', cat.id]">Modifier</a>
+                <button class="btnS" type="submit" (click)="onDelete(cat.id)">Supprimer</button>
+            </div>
+        </div>
+
+    </div>   
+</div>
+<!--<button class="btnN" type="button" (click)="new()">Ajouter un nouveau chat</button>-->

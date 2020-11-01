@@ -1,0 +1,48 @@
+#container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-left:  80px;
+}
+.card{
+    border: 1px solid black;
+    width: 22%;
+    font-size: 1.3rem;
+    margin: 20px 10px 0 0;
+}
+.nom{
+    background: steelblue;
+    height: 40px;
+    padding-left: 10px;
+    padding-top: 10px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+.bloc{
+    background-color: rgb(218, 216, 216);
+    padding: 10px 0;
+    padding-left: 5px;
+}
+
+.btnS{
+    color: white;
+    background-color: #d9534f;
+    width: 25%;
+    padding: 10px;
+    margin: 10px 0 0 50px;
+    cursor: pointer;
+}
+.blocButton a{
+    text-decoration: none;
+    color: white;
+    background-color: #f0ad4e;
+    border: 1px solid #f0ad4e;
+    width: 25%;
+    padding: 10px;
+    margin: 10px 0 0 50px;
+    font-size: 0.7em;
+}
+.couleur{
+    padding: 5px 0;
+}
+

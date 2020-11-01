@@ -1,0 +1,25 @@
+form{
+    text-align: center;
+}
+button{
+    background-color:#5cb85c;
+    color: white;;
+    padding: 10px;
+    margin: 20px 0 0 0;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+p{
+    margin-bottom: 20px;
+}
+input{
+    padding: 5px;
+    border: none;
+    border-bottom: 2px solid black;
+}
+input:focus{
+    outline: none;
+}
+.text{
+    margin-left: 10px;
+}

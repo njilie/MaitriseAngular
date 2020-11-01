@@ -1,0 +1,31 @@
+<h1 style="text-align: center; margin: 50px auto;font-weight: bold;">{{ header }}</h1>
+
+<form [formGroup]="catform" (ngSubmit)="onSubmit()" class="form">
+    <p>
+        <label for="nom">
+            Nom :
+            <input type="text" formControlName="nom">
+        </label>
+    </p>
+    <p>
+        <label for="age">
+            Age :
+            <input type="number" min="1" formControlName="age">
+        </label>
+    </p>
+    <p>
+        <label for="race">
+            Race :
+            <input type="text" formControlName="race">
+        </label>
+    </p><br>
+    <p>
+        <label for="vivant">
+            <input type="checkbox" id="vivant" formControlName="vivant">
+            <span class="text">Est-il vivant?</span>
+        </label>
+    </p>
+    <button type="submit" class="envoyer">Envoyer</button>
+</form>
+
+
